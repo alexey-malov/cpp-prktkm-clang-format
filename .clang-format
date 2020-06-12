@@ -1,0 +1,17 @@
+BasedOnStyle: google
+IndentWidth: 4
+AccessModifierOffset: -4
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+
+
+IncludeCategories:
+  - Regex:           '^"(stdafx|pch|PrecompiledHeader)'
+    Priority:        -2
+  - Regex:           '^"(llvm|llvm-c|clang|clang-c)/'
+    Priority:        4
+  - Regex:           '^(<|"(gtest|isl|json)/)'
+    Priority:        3
+  - Regex:           '.*'
+    Priority:        2
+IncludeIsMainRegex: '$'
